@@ -1,0 +1,14 @@
+def contains(big_string, little_string):
+  if little_string in big_string:
+    return True
+  else:
+    return False
+
+
+def common_letters(string_one, string_two):
+  letters_list = []
+  for letter in string_one:
+    if letter in string_two and letter not in letters_list:
+      letters_list.append(letter)
+  
+  return letters_list
