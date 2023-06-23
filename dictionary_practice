@@ -1,0 +1,16 @@
+
+#Comprehension
+drinks = ["espresso", "chai", "decaf", "drip"]
+caffeine = [64, 40, 0, 120]
+
+zipped_drinks = zip(drinks,caffeine)
+drinks_to_caffeine = {key:value for key,value in zipped_drinks}
+
+print(drinks_to_caffeine)
+
+
+#Iteration of key:value pairs
+pct_women_in_occupation = {"CEO": 28, "Engineering Manager": 9, "Pharmacist": 58, "Physician": 40, "Lawyer": 37, "Aerospace Engineer": 9}
+
+for key, value in pct_women_in_occupation.items():
+  print(f"Women make up {value} percent of {key}s.")
